@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['user_id'])){
+    header('refresh:0;url=index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +56,7 @@
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            Login
+                                            Login account 
                                         </button>
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
